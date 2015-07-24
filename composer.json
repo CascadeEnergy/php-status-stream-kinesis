@@ -1,0 +1,15 @@
+{
+  "name": "CascadeEnergy/php-status-stream-kinesis",
+  "description": "PHP Status Stream implementation using Amazon Kinesis",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Charles Berube",
+      "email": "charles.berube@cascadeenergy.com"
+    }
+  ],
+  "require": {
+    "aws/aws-sdk-php": "^3.0@dev"
+  }
+}
