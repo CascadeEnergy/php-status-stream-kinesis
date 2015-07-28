@@ -9,7 +9,27 @@
       "email": "charles.berube@cascadeenergy.com"
     }
   ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/cberube/php-status-stream"
+    }
+  ],
   "require": {
-    "aws/aws-sdk-php": "^3.0@dev"
+    "aws/aws-sdk-php": "^3.0",
+    "CascadeEnergy/php-status-stream": "0.1.x-dev"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Cascade\\StatusStream\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Cascade\\Tests\\StatusStream\\": "tests/"
+    }
   }
 }
