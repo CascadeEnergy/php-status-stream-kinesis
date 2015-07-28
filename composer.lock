@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cberube/php-status-stream.git",
-                "reference": "ebdaa78c24780196c6a5c4155156c2970d11b954"
+                "reference": "cbef6cc0ee01949bab92fbe1f8f53c852d0c1568"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cberube/php-status-stream/zipball/ebdaa78c24780196c6a5c4155156c2970d11b954",
-                "reference": "ebdaa78c24780196c6a5c4155156c2970d11b954",
+                "url": "https://api.github.com/repos/cberube/php-status-stream/zipball/cbef6cc0ee01949bab92fbe1f8f53c852d0c1568",
+                "reference": "cbef6cc0ee01949bab92fbe1f8f53c852d0c1568",
                 "shasum": ""
             },
             "type": "library",
@@ -39,7 +39,7 @@
             "support": {
                 "source": "https://github.com/cberube/php-status-stream/tree/0.1"
             },
-            "time": "2015-07-27 20:49:21"
+            "time": "2015-07-28 16:18:23"
         },
         {
             "name": "aws/aws-sdk-php",
