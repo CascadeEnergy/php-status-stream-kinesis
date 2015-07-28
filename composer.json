@@ -24,12 +24,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Cascade\\StatusStream\\": "src/"
+      "CascadeEnergy\\StatusStream\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Cascade\\Tests\\StatusStream\\": "tests/"
+      "CascadeEnergy\\Tests\\StatusStream\\": "tests/"
     }
   }
 }

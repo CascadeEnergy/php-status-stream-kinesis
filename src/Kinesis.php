@@ -1,6 +1,6 @@
 <?php
 
-namespace Cascade\StatusStream;
+namespace CascadeEnergy\StatusStream;
 
 use Aws\Kinesis\KinesisClient;
 

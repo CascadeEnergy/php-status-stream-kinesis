@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5e967017b703a40a1e4175267b91ddd5",
+    "hash": "d748d6e27fe045c16064dcc91b91cdbb",
     "packages": [
         {
             "name": "CascadeEnergy/php-status-stream",
@@ -12,18 +12,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cberube/php-status-stream.git",
-                "reference": "cbef6cc0ee01949bab92fbe1f8f53c852d0c1568"
+                "reference": "d8175d6c52c71d6dbcc1a0894871b4ac538e08f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cberube/php-status-stream/zipball/cbef6cc0ee01949bab92fbe1f8f53c852d0c1568",
-                "reference": "cbef6cc0ee01949bab92fbe1f8f53c852d0c1568",
+                "url": "https://api.github.com/repos/cberube/php-status-stream/zipball/d8175d6c52c71d6dbcc1a0894871b4ac538e08f4",
+                "reference": "d8175d6c52c71d6dbcc1a0894871b4ac538e08f4",
                 "shasum": ""
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Cascade\\StatusStream\\": "src/"
+                    "CascadeEnergy\\StatusStream\\": "src/"
                 }
             },
             "license": [
@@ -39,7 +39,7 @@
             "support": {
                 "source": "https://github.com/cberube/php-status-stream/tree/0.1"
             },
-            "time": "2015-07-28 16:18:23"
+            "time": "2015-07-28 19:00:10"
         },
         {
             "name": "aws/aws-sdk-php",

@@ -1,8 +1,8 @@
 <?php
 
-namespace Cascade\Tests\StatusStream\Kinesis;
+namespace CascadeEnergy\Tests\StatusStream\Kinesis;
 
-use Cascade\StatusStream\Kinesis;
+use CascadeEnergy\StatusStream\Kinesis;
 
 class KinesisTest extends \PHPUnit_Framework_TestCase
 {
