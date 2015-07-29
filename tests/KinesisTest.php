@@ -22,19 +22,7 @@ class KinesisTest extends \PHPUnit_Framework_TestCase
         /** @noinspection PhpParamsInspection */
         $this->kinesis = new Kinesis($this->kinesisClient, 'streamName');
         $this->kinesis->setSystemId('system', 'subsystem', 'component');
-        $this->kinesis->setMachineId(['foo', 'bar']);
-    }
-
-    public function testItShouldAllowTheSystemIdInformationToBeConfigured()
-    {
-        $this->assertAttributeEquals('system', 'system', $this->kinesis);
-        $this->assertAttributeEquals('subsystem', 'subsystem', $this->kinesis);
-        $this->assertAttributeEquals('component', 'component', $this->kinesis);
-    }
-
-    public function testItShouldAllowAMultipartMachineIdToBeConfigured()
-    {
-        $this->assertAttributeEquals('foo:bar', 'machineId', $this->kinesis);
+        $this->kinesis->setProcessId('foo:bar');
     }
 
     public function testItShouldSendStatusUpdatesToKinesis()
@@ -43,7 +31,7 @@ class KinesisTest extends \PHPUnit_Framework_TestCase
             'system' => 'system',
             'subsystem' => 'subsystem',
             'component' => 'component',
-            'machineId' => 'foo:bar',
+            'processId' => 'foo:bar',
             'state' => 'foo',
             'context' => ['bar' => 'baz']
         ]);
@@ -71,7 +59,7 @@ class KinesisTest extends \PHPUnit_Framework_TestCase
             'system' => 'system',
             'subsystem' => 'subsystem',
             'component' => 'component',
-            'machineId' => 'foo:bar',
+            'processId' => 'foo:bar',
             'state' => $stateName,
             'context' => ['qux' => 'quux']
         ]);

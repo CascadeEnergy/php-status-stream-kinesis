@@ -4,39 +4,15 @@ namespace CascadeEnergy\StatusStream;
 
 use Aws\Kinesis\KinesisClient;
 
-class Kinesis implements StatusStreamInterface
+class Kinesis extends AbstractStatusStream
 {
-    private $component = '';
     private $kinesis;
-    private $machineId;
     private $streamName;
-    private $system = '';
-    private $subsystem = '';
 
     public function __construct(KinesisClient $kinesis, $streamName)
     {
         $this->kinesis = $kinesis;
         $this->streamName = $streamName;
-    }
-
-    /**
-     * @param string $system
-     * @param string $subsystem
-     * @param string $component
-     */
-    public function setSystemId($system, $subsystem = '', $component = '')
-    {
-        $this->system = $system;
-        $this->subsystem = $subsystem;
-        $this->component = $component;
-    }
-
-    /**
-     * @param array $machineId
-     */
-    public function setMachineId(array $machineId)
-    {
-        $this->machineId = implode(':', $machineId);
     }
 
     /**
@@ -91,7 +67,7 @@ class Kinesis implements StatusStreamInterface
             'system' => $this->system,
             'subsystem' => $this->subsystem,
             'component' => $this->component,
-            'machineId' => $this->machineId,
+            'processId' => $this->processId,
             'state' => $state,
             'context' => $context
         ];
@@ -99,7 +75,7 @@ class Kinesis implements StatusStreamInterface
         $this->kinesis->putRecord([
             'StreamName' => $this->streamName,
             'Data' => json_encode($data),
-            'PartitionKey' => $this->machineId
+            'PartitionKey' => $this->processId
         ]);
     }
 }

@@ -4,26 +4,34 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d748d6e27fe045c16064dcc91b91cdbb",
+    "hash": "2a3c1ffde7dbf93e55509528a238ba55",
     "packages": [
         {
             "name": "CascadeEnergy/php-status-stream",
-            "version": "0.1.x-dev",
+            "version": "0.2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cberube/php-status-stream.git",
-                "reference": "d8175d6c52c71d6dbcc1a0894871b4ac538e08f4"
+                "reference": "70f4084019cef024a9f46136b8eac7c8b70249ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cberube/php-status-stream/zipball/d8175d6c52c71d6dbcc1a0894871b4ac538e08f4",
-                "reference": "d8175d6c52c71d6dbcc1a0894871b4ac538e08f4",
+                "url": "https://api.github.com/repos/cberube/php-status-stream/zipball/70f4084019cef024a9f46136b8eac7c8b70249ba",
+                "reference": "70f4084019cef024a9f46136b8eac7c8b70249ba",
                 "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.7"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "CascadeEnergy\\StatusStream\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "CascadeEnergy\\Tests\\StatusStream\\": "tests/"
                 }
             },
             "license": [
@@ -37,22 +45,22 @@
             ],
             "description": "Base interface for streams of status information",
             "support": {
-                "source": "https://github.com/cberube/php-status-stream/tree/0.1"
+                "source": "https://github.com/cberube/php-status-stream/tree/0.2"
             },
-            "time": "2015-07-28 19:00:10"
+            "time": "2015-07-29 20:01:55"
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.2.1",
+            "version": "3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "e6c35f69cac7386c6c1ebf9a7d230abca49fef5d"
+                "reference": "677b931b10163726f9fb5662d9748db67a825d29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e6c35f69cac7386c6c1ebf9a7d230abca49fef5d",
-                "reference": "e6c35f69cac7386c6c1ebf9a7d230abca49fef5d",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/677b931b10163726f9fb5662d9748db67a825d29",
+                "reference": "677b931b10163726f9fb5662d9748db67a825d29",
                 "shasum": ""
             },
             "require": {
@@ -112,7 +120,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2015-07-24 00:42:07"
+            "time": "2015-07-28 22:59:37"
         },
         {
             "name": "guzzlehttp/guzzle",
