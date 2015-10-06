@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "953af15b4e535f5c9d5adfe02cf6a705",
+    "hash": "3352b0ccc46ccc4be195a015f64ce731",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -84,16 +84,16 @@
         },
         {
             "name": "cascade-energy/php-status-stream",
-            "version": "0.2.x-dev",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/cberube/php-status-stream.git",
-                "reference": "eb58500fd291757b2c47593b73fda96cc61fb2aa"
+                "url": "https://github.com/CascadeEnergy/php-status-stream.git",
+                "reference": "40807a082d043035d663ab28926c4d638084fb19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cberube/php-status-stream/zipball/eb58500fd291757b2c47593b73fda96cc61fb2aa",
-                "reference": "eb58500fd291757b2c47593b73fda96cc61fb2aa",
+                "url": "https://api.github.com/repos/CascadeEnergy/php-status-stream/zipball/40807a082d043035d663ab28926c4d638084fb19",
+                "reference": "40807a082d043035d663ab28926c4d638084fb19",
                 "shasum": ""
             },
             "require-dev": {
@@ -105,11 +105,7 @@
                     "CascadeEnergy\\StatusStream\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "CascadeEnergy\\Tests\\StatusStream\\": "tests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -120,10 +116,7 @@
                 }
             ],
             "description": "Base interface for streams of status information",
-            "support": {
-                "source": "https://github.com/cberube/php-status-stream/tree/0.2"
-            },
-            "time": "2015-10-06 00:23:24"
+            "time": "2015-10-06 00:30:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1356,9 +1349,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "cascade-energy/php-status-stream": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
