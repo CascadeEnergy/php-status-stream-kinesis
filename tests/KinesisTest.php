@@ -23,6 +23,7 @@ class KinesisTest extends \PHPUnit_Framework_TestCase
         $this->kinesis = new Kinesis($this->kinesisClient, 'streamName');
         $this->kinesis->setSystemId('system', 'subsystem', 'component');
         $this->kinesis->setProcessId('foo:bar');
+        $this->kinesis->setVersion('1.2.3');
     }
 
     public function testItShouldSendStatusUpdatesToKinesis()
@@ -32,6 +33,7 @@ class KinesisTest extends \PHPUnit_Framework_TestCase
             'subsystem' => 'subsystem',
             'component' => 'component',
             'processId' => 'foo:bar',
+            'version' => '1.2.3',
             'state' => 'foo',
             'context' => ['bar' => 'baz']
         ]);
@@ -60,6 +62,7 @@ class KinesisTest extends \PHPUnit_Framework_TestCase
             'subsystem' => 'subsystem',
             'component' => 'component',
             'processId' => 'foo:bar',
+            'version' => '1.2.3',
             'state' => $stateName,
             'context' => ['qux' => 'quux']
         ]);

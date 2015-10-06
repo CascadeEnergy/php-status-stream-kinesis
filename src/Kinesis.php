@@ -68,6 +68,7 @@ class Kinesis extends AbstractStatusStream
             'subsystem' => $this->subsystem,
             'component' => $this->component,
             'processId' => $this->processId,
+            'version' => $this->version,
             'state' => $state,
             'context' => $context
         ];

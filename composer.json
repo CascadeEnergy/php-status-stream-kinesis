@@ -1,5 +1,5 @@
 {
-  "name": "CascadeEnergy/php-status-stream-kinesis",
+  "name": "cascade-energy/php-status-stream-kinesis",
   "description": "PHP Status Stream implementation using Amazon Kinesis",
   "minimum-stability": "stable",
   "license": "MIT",
@@ -17,7 +17,7 @@
   ],
   "require": {
     "aws/aws-sdk-php": "^3.0",
-    "CascadeEnergy/php-status-stream": "0.2.x-dev"
+    "cascade-energy/php-status-stream": "0.2.x-dev"
   },
   "require-dev": {
     "phpunit/phpunit": "^4.7"
